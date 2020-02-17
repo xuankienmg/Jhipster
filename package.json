@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "jhipster",
   "version": "0.0.1-SNAPSHOT",
-  "description": "Description for Blog",
+  "description": "Description for Jhipster",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

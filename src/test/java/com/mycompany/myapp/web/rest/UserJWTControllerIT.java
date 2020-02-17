@@ -1,6 +1,6 @@
 package com.mycompany.myapp.web.rest;
 
-import com.mycompany.myapp.BlogApp;
+import com.mycompany.myapp.JhipsterApp;
 import com.mycompany.myapp.domain.User;
 import com.mycompany.myapp.repository.UserRepository;
 import com.mycompany.myapp.web.rest.vm.LoginVM;
@@ -26,7 +26,7 @@ import static org.hamcrest.Matchers.not;
  * Integration tests for the {@link UserJWTController} REST controller.
  */
 @AutoConfigureMockMvc
-@SpringBootTest(classes = BlogApp.class)
+@SpringBootTest(classes = JhipsterApp.class)
 public class UserJWTControllerIT {
 
     @Autowired
