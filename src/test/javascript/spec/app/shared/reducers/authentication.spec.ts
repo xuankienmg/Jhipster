@@ -154,7 +154,7 @@ describe('Authentication reducer tests', () => {
     const resolvedObject = { value: 'whatever' };
     beforeEach(() => {
       const mockStore = configureStore([thunk, promiseMiddleware]);
-      store = mockStore({ authentication: { account: { langKey: 'en' } } });
+      store = mockStore({ authentication: { account: { langKey: 'vi' } } });
       axios.get = sinon.stub().returns(Promise.resolve(resolvedObject));
     });
 
@@ -169,7 +169,7 @@ describe('Authentication reducer tests', () => {
         },
         {
           type: localeActionTypes.SET_LOCALE,
-          locale: 'en'
+          locale: 'vi'
         }
       ];
       await store.dispatch(getSession());
@@ -220,7 +220,7 @@ describe('Authentication reducer tests', () => {
         },
         {
           type: localeActionTypes.SET_LOCALE,
-          locale: 'en'
+          locale: 'vi'
         }
       ];
       await store.dispatch(login('test', 'test'));

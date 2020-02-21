@@ -12,7 +12,7 @@ import { ACTION_TYPES as localeActionTypes } from 'app/shared/reducers/locale';
 
 describe('Settings reducer tests', () => {
   beforeAll(() => {
-    TranslatorContext.registerTranslations('en', {});
+    TranslatorContext.registerTranslations('vi', {});
   });
 
   describe('Common tests', () => {
@@ -79,7 +79,7 @@ describe('Settings reducer tests', () => {
     const resolvedObject = { value: 'whatever' };
     beforeEach(() => {
       const mockStore = configureStore([thunk, promiseMiddleware]);
-      store = mockStore({ authentication: { account: { langKey: 'en' } } });
+      store = mockStore({ authentication: { account: { langKey: 'vi' } } });
       axios.get = sinon.stub().returns(Promise.resolve(resolvedObject));
       axios.post = sinon.stub().returns(Promise.resolve(resolvedObject));
     });
@@ -108,7 +108,7 @@ describe('Settings reducer tests', () => {
         },
         {
           type: localeActionTypes.SET_LOCALE,
-          locale: 'en'
+          locale: 'vi'
         }
       ];
       await store.dispatch(saveAccountSettings({})).then(() => expect(store.getActions()).toEqual(expectedActions));

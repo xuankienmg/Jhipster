@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "com.mycompany.myapp",
-      "nativeLanguage": "en"
+      "nativeLanguage": "vi"
     },
     "jhipsterVersion": "6.7.1",
     "applicationType": "monolith",
@@ -22,22 +22,22 @@
     "serviceDiscoveryType": false,
     "buildTool": "maven",
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "MGEzZmYyYzExMGM0M2Y4YTQyOWZhMTc0NjgxMmE0NmQxZjUyNjRmNWUyNzk5OTQ5YWFkZTZjZTY3MjBjY2MxYWI4Nzg3NDI0NzUxYWEwYWI0NDE3ZmY5YmNhNGVkZTUzMGU4YzRkMjM5OWRmY2MzZjAyZTYzYWQ0ZmYxNWZmYmQ=",
+    "jwtSecretKey": "YTBlYWM3YjRiNmJjZmEwMGIwYTlkZmEwNDZiMGI4ZmY2YzM2OGFiZWM0YjQxYTA0NWQ1NjVjNTA3ZWI4NDc3NDU3OGY2OTcyOTQyMDc5ZDY1ZmQxZmYxYTdkMjE1ZThjNDhmY2FiOTgzYmY2MjgzMTdlYWVlN2IwZTY0OTExMjc=",
     "embeddableLaunchScript": false,
     "useSass": true,
     "clientPackageManager": "npm",
     "clientFramework": "react",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "creationTimestamp": 1582080763860,
+    "creationTimestamp": 1582184912680,
     "testFrameworks": [],
     "jhiPrefix": "jhi",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
     "enableTranslation": true,
-    "nativeLanguage": "en",
-    "languages": ["en"],
+    "nativeLanguage": "vi",
+    "languages": ["vi"],
     "blueprints": []
   }
 }

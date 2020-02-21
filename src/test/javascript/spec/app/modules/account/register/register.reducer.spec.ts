@@ -17,7 +17,7 @@ describe('Creating account tests', () => {
   };
 
   beforeAll(() => {
-    TranslatorContext.registerTranslations('en', {});
+    TranslatorContext.registerTranslations('vi', {});
   });
 
   it('should return the initial state', () => {
