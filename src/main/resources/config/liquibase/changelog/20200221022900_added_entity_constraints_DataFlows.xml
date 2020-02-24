@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity DataFlows.
+    -->
+    <changeSet id="20200221022900-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="etl_status_id"
+                                 baseTableName="data_flows"
+                                 constraintName="fk_data_flows_etl_status_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="etl_status"/>
+
+        <addForeignKeyConstraint baseColumnNames="etl_pkg_id"
+                                 baseTableName="data_flows"
+                                 constraintName="fk_data_flows_etl_pkg_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="etl_packages"/>
+
+    </changeSet>
+</databaseChangeLog>

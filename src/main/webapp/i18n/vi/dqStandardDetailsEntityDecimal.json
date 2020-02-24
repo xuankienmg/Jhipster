@@ -1,0 +1,24 @@
+{
+  "jhipsterApp": {
+    "dqStandardDetailsEntityDecimal": {
+      "home": {
+        "title": "Dq Standard Details Entity Decimals",
+        "createLabel": "Thêm mới một Dq Standard Details Entity Decimal",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Standard Details Entity Decimal",
+        "notFound": "No Dq Standard Details Entity Decimals found"
+      },
+      "created": "Một Dq Standard Details Entity Decimal mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Standard Details Entity Decimal cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Standard Details Entity Decimal đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Standard Details Entity Decimal {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Standard Details Entity Decimal"
+      },
+      "stdAttributeName": "Std Attribute Name",
+      "stdAttributeValue": "Std Attribute Value",
+      "std": "Std"
+    }
+  }
+}

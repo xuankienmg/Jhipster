@@ -1,0 +1,24 @@
+{
+    "name": "DqRuleCategories",
+    "fields": [
+        {
+            "fieldName": "catName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "catDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200221020200",
+    "entityTableName": "dq_rule_categories",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

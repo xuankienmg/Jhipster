@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dqRuleCategories": {
+      "home": {
+        "title": "Dq Rule Categories",
+        "createLabel": "Thêm mới một Dq Rule Categories",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Rule Categories",
+        "notFound": "No Dq Rule Categories found"
+      },
+      "created": "Một Dq Rule Categories mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Rule Categories cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Rule Categories đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Rule Categories {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Rule Categories"
+      },
+      "catName": "Cat Name",
+      "catDescription": "Cat Description"
+    }
+  }
+}

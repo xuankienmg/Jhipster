@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dqRuleStatus": {
+      "home": {
+        "title": "Dq Rule Statuses",
+        "createLabel": "Thêm mới một Dq Rule Status",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Rule Status",
+        "notFound": "No Dq Rule Statuses found"
+      },
+      "created": "Một Dq Rule Status mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Rule Status cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Rule Status đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Rule Status {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Rule Status"
+      },
+      "statusName": "Status Name",
+      "statusDescription": "Status Description"
+    }
+  }
+}

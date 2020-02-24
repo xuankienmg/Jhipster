@@ -1,0 +1,32 @@
+{
+    "name": "DqStandardDetailsEntityDatetime",
+    "fields": [
+        {
+            "fieldName": "stdAttributeName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "stdAttributeValue",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dqStandards",
+            "otherEntityRelationshipName": "dqStandardDetailsEntityDatetime",
+            "relationshipName": "std",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221021400",
+    "entityTableName": "dq_standard_details_entity_datetime",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

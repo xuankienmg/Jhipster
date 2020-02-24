@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity DqRules.
+    -->
+    <changeSet id="20200221020600-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="type_id"
+                                 baseTableName="dq_rules"
+                                 constraintName="fk_dq_rules_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_rule_types"/>
+
+        <addForeignKeyConstraint baseColumnNames="risk_id"
+                                 baseTableName="dq_rules"
+                                 constraintName="fk_dq_rules_risk_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_rule_risk_levels"/>
+
+        <addForeignKeyConstraint baseColumnNames="status_id"
+                                 baseTableName="dq_rules"
+                                 constraintName="fk_dq_rules_status_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_rule_status"/>
+
+        <addForeignKeyConstraint baseColumnNames="cat_id"
+                                 baseTableName="dq_rules"
+                                 constraintName="fk_dq_rules_cat_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_rule_categories"/>
+
+        <addForeignKeyConstraint baseColumnNames="action_id"
+                                 baseTableName="dq_rules"
+                                 constraintName="fk_dq_rules_action_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_rule_actions"/>
+
+    </changeSet>
+</databaseChangeLog>

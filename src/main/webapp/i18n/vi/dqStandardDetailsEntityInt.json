@@ -1,0 +1,24 @@
+{
+  "jhipsterApp": {
+    "dqStandardDetailsEntityInt": {
+      "home": {
+        "title": "Dq Standard Details Entity Ints",
+        "createLabel": "Thêm mới một Dq Standard Details Entity Int",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Standard Details Entity Int",
+        "notFound": "No Dq Standard Details Entity Ints found"
+      },
+      "created": "Một Dq Standard Details Entity Int mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Standard Details Entity Int cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Standard Details Entity Int đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Standard Details Entity Int {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Standard Details Entity Int"
+      },
+      "stdAttributeName": "Std Attribute Name",
+      "stdAttributeValue": "Std Attribute Value",
+      "std": "Std"
+    }
+  }
+}

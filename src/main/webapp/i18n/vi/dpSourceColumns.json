@@ -1,0 +1,30 @@
+{
+  "jhipsterApp": {
+    "dpSourceColumns": {
+      "home": {
+        "title": "Dp Source Columns",
+        "createLabel": "Thêm mới một Dp Source Columns",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dp Source Columns",
+        "notFound": "No Dp Source Columns found"
+      },
+      "created": "Một Dp Source Columns mới được tạo với định danh {{ param }}",
+      "updated": "Một Dp Source Columns cập nhật với định danh {{ param }}",
+      "deleted": "Một Dp Source Columns đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dp Source Columns {{ id }}?"
+      },
+      "detail": {
+        "title": "Dp Source Columns"
+      },
+      "uniqueValues": "Unique Values",
+      "minValue": "Min Value",
+      "maxValue": "Max Value",
+      "averageValue": "Average Value",
+      "dpSourceColumnscol": "Dp Source Columnscol",
+      "maxLength": "Max Length",
+      "nulls": "Nulls",
+      "tbl": "Tbl",
+      "col": "Col"
+    }
+  }
+}

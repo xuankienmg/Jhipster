@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity DsStores.
+    -->
+    <changeSet id="20200221022400-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="store_dbms_type_id"
+                                 baseTableName="ds_stores"
+                                 constraintName="fk_ds_stores_store_dbms_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ds_dbms_types"/>
+
+        <addForeignKeyConstraint baseColumnNames="store_collation_id"
+                                 baseTableName="ds_stores"
+                                 constraintName="fk_ds_stores_store_collation_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ds_collations"/>
+
+    </changeSet>
+</databaseChangeLog>

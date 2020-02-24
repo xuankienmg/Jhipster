@@ -1,0 +1,22 @@
+{
+  "jhipsterApp": {
+    "etlStatus": {
+      "home": {
+        "title": "Etl Statuses",
+        "createLabel": "Thêm mới một Etl Status",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Etl Status",
+        "notFound": "No Etl Statuses found"
+      },
+      "created": "Một Etl Status mới được tạo với định danh {{ param }}",
+      "updated": "Một Etl Status cập nhật với định danh {{ param }}",
+      "deleted": "Một Etl Status đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Etl Status {{ id }}?"
+      },
+      "detail": {
+        "title": "Etl Status"
+      },
+      "etlStatusName": "Etl Status Name"
+    }
+  }
+}

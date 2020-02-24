@@ -1,0 +1,28 @@
+{
+    "name": "DataMapping",
+    "fields": [
+        {
+            "fieldName": "srcColId",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dsColumns",
+            "otherEntityRelationshipName": "dataMapping",
+            "relationshipName": "col",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221022300",
+    "entityTableName": "data_mapping",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

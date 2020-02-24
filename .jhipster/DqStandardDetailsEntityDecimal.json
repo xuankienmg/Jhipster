@@ -1,0 +1,32 @@
+{
+    "name": "DqStandardDetailsEntityDecimal",
+    "fields": [
+        {
+            "fieldName": "stdAttributeName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "stdAttributeValue",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dqStandards",
+            "otherEntityRelationshipName": "dqStandardDetailsEntityDecimal",
+            "relationshipName": "std",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221021300",
+    "entityTableName": "dq_standard_details_entity_decimal",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,22 @@
+{
+  "jhipsterApp": {
+    "eventTypes": {
+      "home": {
+        "title": "Event Types",
+        "createLabel": "Thêm mới một Event Types",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Event Types",
+        "notFound": "No Event Types found"
+      },
+      "created": "Một Event Types mới được tạo với định danh {{ param }}",
+      "updated": "Một Event Types cập nhật với định danh {{ param }}",
+      "deleted": "Một Event Types đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Event Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Event Types"
+      },
+      "eventTypeName": "Event Type Name"
+    }
+  }
+}

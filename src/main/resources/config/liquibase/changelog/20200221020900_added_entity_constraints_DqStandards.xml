@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity DqStandards.
+    -->
+    <changeSet id="20200221020900-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="std_type_id"
+                                 baseTableName="dq_standards"
+                                 constraintName="fk_dq_standards_std_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_standard_types"/>
+
+        <addForeignKeyConstraint baseColumnNames="dq_standards_id"
+                                 baseTableName="dq_standards_rule"
+                                 constraintName="fk_dq_standards_rule_dq_standards_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_standards"/>
+
+        <addForeignKeyConstraint baseColumnNames="rule_id"
+                                 baseTableName="dq_standards_rule"
+                                 constraintName="fk_dq_standards_rule_rule_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_rules"/>
+        
+    </changeSet>
+</databaseChangeLog>

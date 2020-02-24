@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dqStandardTypes": {
+      "home": {
+        "title": "Dq Standard Types",
+        "createLabel": "Thêm mới một Dq Standard Types",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Standard Types",
+        "notFound": "No Dq Standard Types found"
+      },
+      "created": "Một Dq Standard Types mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Standard Types cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Standard Types đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Standard Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Standard Types"
+      },
+      "stdTypeName": "Std Type Name",
+      "stdTypeDescription": "Std Type Description"
+    }
+  }
+}

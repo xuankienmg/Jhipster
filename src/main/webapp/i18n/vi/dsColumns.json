@@ -1,0 +1,29 @@
+{
+  "jhipsterApp": {
+    "dsColumns": {
+      "home": {
+        "title": "Ds Columns",
+        "createLabel": "Thêm mới một Ds Columns",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Ds Columns",
+        "notFound": "No Ds Columns found"
+      },
+      "created": "Một Ds Columns mới được tạo với định danh {{ param }}",
+      "updated": "Một Ds Columns cập nhật với định danh {{ param }}",
+      "deleted": "Một Ds Columns đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Ds Columns {{ id }}?"
+      },
+      "detail": {
+        "title": "Ds Columns"
+      },
+      "colName": "Col Name",
+      "colDataType": "Col Data Type",
+      "isPrimaryKey": "Is Primary Key",
+      "isForeignKey": "Is Foreign Key",
+      "isIdentity": "Is Identity",
+      "isNull": "Is Null",
+      "colTbl": "Col Tbl",
+      "rule": "Rule"
+    }
+  }
+}

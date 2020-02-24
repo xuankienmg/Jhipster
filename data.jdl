@@ -1,0 +1,232 @@
+enum Language {
+    ENGLISH, VIETNAMESE
+}
+
+entity DqRuleTypes { 
+  typeName String
+  typeDescription String
+}
+
+entity DqRuleCategories { 
+  catName String
+  catDescription String
+}
+
+entity DqRuleStatus { 
+  statusName String
+  statusDescription String
+}
+
+entity DqRuleRiskLevels { 
+  riskName String
+  riskDescription String
+}
+
+entity DqRuleActions { 
+  actionName String
+  actionDescription String
+}
+
+entity DqRules { 
+  ruleName String 
+  ruleDescription String 
+}
+
+entity DqNotifications {
+  repicientId Integer
+  repicientTypeId Integer
+}
+
+entity DqStandardTypes { 
+  stdTypeName String
+  stdTypeDescription String
+}
+
+entity DqStandards { 
+  stdName String
+  stdDescription String
+}
+
+entity DqStandardDetailsEntityVarchar { 
+  stdAtttributeName String
+  stdAttributeValue String 
+}
+
+entity DqStandardDetailsEntityText { 
+  stdAttributeName String
+  stdAttributeValue Long
+}
+
+entity DqStandardDetailsEntityInt { 
+  stdAttributeName String
+  stdAttributeValue Integer 
+}
+
+entity DqStandardDetailsEntityDecimal { 
+  stdAttributeName String
+  stdAttributeValue Long 
+}
+ 
+entity DqStandardDetailsEntityDatetime { 
+  stdAttributeName String
+  stdAttributeValue Instant 
+}
+ 
+entity DqStandardDetailsEntityTime { 
+  stdAttributeName String
+  stdAttributeValue Long 
+}
+
+entity DsColumns { 
+  colName String
+  colDataType String
+  isPrimaryKey Boolean
+  isForeignKey Boolean
+  isIdentity Boolean
+  isNull Boolean
+}
+
+entity DataDefinition {
+  srcColId Integer
+  defDescription String
+  defSampleData String
+}
+
+entity DsColumnTypes { 
+  colTypeName String
+  colTypeDescription String
+}
+ 
+entity DsTables { 
+  tblName String
+  tblDescription String
+}
+
+entity DsTableTypes { 
+  tblTypeName String
+  tblTypeDescription String
+}
+
+entity DpSourceTables { 
+  rows Long
+  rowSize Integer
+  columns Integer
+  hasTimestamp Boolean
+}
+ 
+entity DpSourceColumns {
+  uniqueValues Long
+  minValue String
+  maxValue String
+  averageValue String
+  dpSourceColumnscol String
+  maxLength Long
+  nulls Long
+}
+
+entity DataMapping {
+  srcColId Integer
+}
+ 
+entity DsStores { 
+  storeName String
+  storeDescription String
+  storeSize Long
+  growthSize Long
+}
+
+entity DsDbmsTypes { 
+  dbmsTypeName String
+  dbsmTypeDescription String
+}
+
+entity DsCollations { 
+  collationName String
+  collationDescription String
+}
+
+entity EtlStatus { 
+  etlStatusName String
+}
+
+entity EtlPackages { 
+  etlPkgName String
+  etlPkgDescription String
+  etlPkgSchedule String
+}
+
+entity DataFlows { 
+  flowName String
+  flowDescription String
+  source String
+  destination String
+  transformation String
+  lSET Instant
+  cET Instant 
+}
+
+entity EventCategories { 
+  eventCatName String
+}
+ 
+entity EventTypes { 
+  eventTypeName String
+}
+ 
+entity EventLogs {
+  rows Long
+  eventNote String
+  eventTimestamp Instant 
+}
+
+relationship ManyToOne {
+  DqRules{type} to DqRuleTypes
+  DqRules{risk} to DqRuleRiskLevels
+  DqRules{status} to DqRuleStatus
+  DqRules{cat} to DqRuleCategories
+  DqRules{action} to DqRuleActions
+  DqNotifications{rule} to DqRules
+  DqStandards{stdType} to DqStandardTypes
+  DqStandardDetailsEntityVarchar{std} to DqStandards
+  DqStandardDetailsEntityText{std} to DqStandards
+  DqStandardDetailsEntityInt{std} to DqStandards
+  DqStandardDetailsEntityDecimal{std} to DqStandards
+  DqStandardDetailsEntityDatetime{std} to DqStandards
+  DqStandardDetailsEntityTime{std} to DqStandards
+  DataDefinition{col} to DsColumns
+  DataDefinition{type} to DsColumnTypes
+  DataDefinition{tbl} to DsTables
+  DsColumns{colTbl} to DsTables
+  DpSourceTables{tbl} to DsTables
+  DpSourceColumns{tbl} to DsTables
+  DpSourceColumns{col} to DsColumns
+  DataMapping{col} to DsColumns
+  DsTables{tblType} to DsTableTypes
+  DsTables{store} to DsStores
+  DsCollations{dbmsType} to DsDbmsTypes
+  DsStores{storeDbmsType} to DsDbmsTypes
+  DsStores{storeCollation} to DsCollations
+  DataFlows{etlStatus} to EtlStatus
+  DataFlows{etlPkg} to EtlPackages
+  EventLogs{eventType} to EventTypes
+  EventLogs{eventCat} to EventCategories
+  EventLogs{flow} to DataFlows
+  EventLogs{tbl} to DsTables
+}
+
+relationship ManyToMany {
+    DqStandards{rule} to DqRules{std} 
+    DsColumns{rule}   to DqRules{col} 
+}
+
+// Support filtering
+filter all
+
+// Set pagination options
+paginate all with pagination
+
+// Create dto for all entity service
+dto * with mapstruct
+
+// Set service options to all 
+service all with serviceImpl 

@@ -14,6 +14,57 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020100_added_entity_DqRuleTypes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020200_added_entity_DqRuleCategories.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020300_added_entity_DqRuleStatus.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020400_added_entity_DqRuleRiskLevels.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020500_added_entity_DqRuleActions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020600_added_entity_DqRules.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020700_added_entity_DqNotifications.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020800_added_entity_DqStandardTypes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020900_added_entity_DqStandards.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021000_added_entity_DqStandardDetailsEntityVarchar.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021100_added_entity_DqStandardDetailsEntityText.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021200_added_entity_DqStandardDetailsEntityInt.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021300_added_entity_DqStandardDetailsEntityDecimal.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021400_added_entity_DqStandardDetailsEntityDatetime.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021500_added_entity_DqStandardDetailsEntityTime.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021600_added_entity_DsColumns.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021700_added_entity_DataDefinition.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021800_added_entity_DsColumnTypes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021900_added_entity_DsTables.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022000_added_entity_DsTableTypes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022100_added_entity_DpSourceTables.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022200_added_entity_DpSourceColumns.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022300_added_entity_DataMapping.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022400_added_entity_DsStores.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022500_added_entity_DsDbmsTypes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022600_added_entity_DsCollations.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022700_added_entity_EtlStatus.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022800_added_entity_EtlPackages.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022900_added_entity_DataFlows.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221023000_added_entity_EventCategories.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221023100_added_entity_EventTypes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221023200_added_entity_EventLogs.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20200221020600_added_entity_constraints_DqRules.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020700_added_entity_constraints_DqNotifications.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221020900_added_entity_constraints_DqStandards.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021000_added_entity_constraints_DqStandardDetailsEntityVarchar.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021100_added_entity_constraints_DqStandardDetailsEntityText.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021200_added_entity_constraints_DqStandardDetailsEntityInt.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021300_added_entity_constraints_DqStandardDetailsEntityDecimal.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021400_added_entity_constraints_DqStandardDetailsEntityDatetime.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021500_added_entity_constraints_DqStandardDetailsEntityTime.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021600_added_entity_constraints_DsColumns.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021700_added_entity_constraints_DataDefinition.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221021900_added_entity_constraints_DsTables.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022100_added_entity_constraints_DpSourceTables.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022200_added_entity_constraints_DpSourceColumns.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022300_added_entity_constraints_DataMapping.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022400_added_entity_constraints_DsStores.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022600_added_entity_constraints_DsCollations.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221022900_added_entity_constraints_DataFlows.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200221023200_added_entity_constraints_EventLogs.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

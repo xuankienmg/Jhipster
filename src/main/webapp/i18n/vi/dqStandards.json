@@ -1,0 +1,25 @@
+{
+  "jhipsterApp": {
+    "dqStandards": {
+      "home": {
+        "title": "Dq Standards",
+        "createLabel": "Thêm mới một Dq Standards",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Standards",
+        "notFound": "No Dq Standards found"
+      },
+      "created": "Một Dq Standards mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Standards cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Standards đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Standards {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Standards"
+      },
+      "stdName": "Std Name",
+      "stdDescription": "Std Description",
+      "stdType": "Std Type",
+      "rule": "Rule"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "jhipsterApp": {
+    "dataFlows": {
+      "home": {
+        "title": "Data Flows",
+        "createLabel": "Thêm mới một Data Flows",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Data Flows",
+        "notFound": "No Data Flows found"
+      },
+      "created": "Một Data Flows mới được tạo với định danh {{ param }}",
+      "updated": "Một Data Flows cập nhật với định danh {{ param }}",
+      "deleted": "Một Data Flows đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Data Flows {{ id }}?"
+      },
+      "detail": {
+        "title": "Data Flows"
+      },
+      "flowName": "Flow Name",
+      "flowDescription": "Flow Description",
+      "source": "Source",
+      "destination": "Destination",
+      "transformation": "Transformation",
+      "lSET": "L SET",
+      "cET": "C ET",
+      "etlStatus": "Etl Status",
+      "etlPkg": "Etl Pkg"
+    }
+  }
+}

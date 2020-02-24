@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dqRuleTypes": {
+      "home": {
+        "title": "Dq Rule Types",
+        "createLabel": "Thêm mới một Dq Rule Types",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Rule Types",
+        "notFound": "No Dq Rule Types found"
+      },
+      "created": "Một Dq Rule Types mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Rule Types cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Rule Types đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Rule Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Rule Types"
+      },
+      "typeName": "Type Name",
+      "typeDescription": "Type Description"
+    }
+  }
+}

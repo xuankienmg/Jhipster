@@ -1,0 +1,59 @@
+{
+    "name": "DataFlows",
+    "fields": [
+        {
+            "fieldName": "flowName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flowDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "source",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "destination",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "transformation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lSET",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "cET",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "etlStatus",
+            "otherEntityRelationshipName": "dataFlows",
+            "relationshipName": "etlStatus",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "etlPackages",
+            "otherEntityRelationshipName": "dataFlows",
+            "relationshipName": "etlPkg",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221022900",
+    "entityTableName": "data_flows",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

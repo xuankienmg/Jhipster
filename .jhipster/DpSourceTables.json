@@ -1,0 +1,40 @@
+{
+    "name": "DpSourceTables",
+    "fields": [
+        {
+            "fieldName": "rows",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "rowSize",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "columns",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "hasTimestamp",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dsTables",
+            "otherEntityRelationshipName": "dpSourceTables",
+            "relationshipName": "tbl",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221022100",
+    "entityTableName": "dp_source_tables",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

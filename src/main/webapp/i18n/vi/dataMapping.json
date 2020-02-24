@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dataMapping": {
+      "home": {
+        "title": "Data Mappings",
+        "createLabel": "Thêm mới một Data Mapping",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Data Mapping",
+        "notFound": "No Data Mappings found"
+      },
+      "created": "Một Data Mapping mới được tạo với định danh {{ param }}",
+      "updated": "Một Data Mapping cập nhật với định danh {{ param }}",
+      "deleted": "Một Data Mapping đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Data Mapping {{ id }}?"
+      },
+      "detail": {
+        "title": "Data Mapping"
+      },
+      "srcColId": "Src Col Id",
+      "col": "Col"
+    }
+  }
+}

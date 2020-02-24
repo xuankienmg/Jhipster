@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dsDbmsTypes": {
+      "home": {
+        "title": "Ds Dbms Types",
+        "createLabel": "Thêm mới một Ds Dbms Types",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Ds Dbms Types",
+        "notFound": "No Ds Dbms Types found"
+      },
+      "created": "Một Ds Dbms Types mới được tạo với định danh {{ param }}",
+      "updated": "Một Ds Dbms Types cập nhật với định danh {{ param }}",
+      "deleted": "Một Ds Dbms Types đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Ds Dbms Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Ds Dbms Types"
+      },
+      "dbmsTypeName": "Dbms Type Name",
+      "dbsmTypeDescription": "Dbsm Type Description"
+    }
+  }
+}

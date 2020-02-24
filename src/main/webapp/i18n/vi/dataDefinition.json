@@ -1,0 +1,27 @@
+{
+  "jhipsterApp": {
+    "dataDefinition": {
+      "home": {
+        "title": "Data Definitions",
+        "createLabel": "Thêm mới một Data Definition",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Data Definition",
+        "notFound": "No Data Definitions found"
+      },
+      "created": "Một Data Definition mới được tạo với định danh {{ param }}",
+      "updated": "Một Data Definition cập nhật với định danh {{ param }}",
+      "deleted": "Một Data Definition đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Data Definition {{ id }}?"
+      },
+      "detail": {
+        "title": "Data Definition"
+      },
+      "srcColId": "Src Col Id",
+      "defDescription": "Def Description",
+      "defSampleData": "Def Sample Data",
+      "col": "Col",
+      "type": "Type",
+      "tbl": "Tbl"
+    }
+  }
+}

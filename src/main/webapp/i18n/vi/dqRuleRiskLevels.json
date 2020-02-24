@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dqRuleRiskLevels": {
+      "home": {
+        "title": "Dq Rule Risk Levels",
+        "createLabel": "Thêm mới một Dq Rule Risk Levels",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Rule Risk Levels",
+        "notFound": "No Dq Rule Risk Levels found"
+      },
+      "created": "Một Dq Rule Risk Levels mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Rule Risk Levels cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Rule Risk Levels đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Rule Risk Levels {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Rule Risk Levels"
+      },
+      "riskName": "Risk Name",
+      "riskDescription": "Risk Description"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "DqStandardDetailsEntityInt",
+    "fields": [
+        {
+            "fieldName": "stdAttributeName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "stdAttributeValue",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dqStandards",
+            "otherEntityRelationshipName": "dqStandardDetailsEntityInt",
+            "relationshipName": "std",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221021200",
+    "entityTableName": "dq_standard_details_entity_int",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

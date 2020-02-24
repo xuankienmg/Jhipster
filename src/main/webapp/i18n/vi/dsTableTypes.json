@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dsTableTypes": {
+      "home": {
+        "title": "Ds Table Types",
+        "createLabel": "Thêm mới một Ds Table Types",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Ds Table Types",
+        "notFound": "No Ds Table Types found"
+      },
+      "created": "Một Ds Table Types mới được tạo với định danh {{ param }}",
+      "updated": "Một Ds Table Types cập nhật với định danh {{ param }}",
+      "deleted": "Một Ds Table Types đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Ds Table Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Ds Table Types"
+      },
+      "tblTypeName": "Tbl Type Name",
+      "tblTypeDescription": "Tbl Type Description"
+    }
+  }
+}

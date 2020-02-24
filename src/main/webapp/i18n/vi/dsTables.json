@@ -1,0 +1,25 @@
+{
+  "jhipsterApp": {
+    "dsTables": {
+      "home": {
+        "title": "Ds Tables",
+        "createLabel": "Thêm mới một Ds Tables",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Ds Tables",
+        "notFound": "No Ds Tables found"
+      },
+      "created": "Một Ds Tables mới được tạo với định danh {{ param }}",
+      "updated": "Một Ds Tables cập nhật với định danh {{ param }}",
+      "deleted": "Một Ds Tables đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Ds Tables {{ id }}?"
+      },
+      "detail": {
+        "title": "Ds Tables"
+      },
+      "tblName": "Tbl Name",
+      "tblDescription": "Tbl Description",
+      "tblType": "Tbl Type",
+      "store": "Store"
+    }
+  }
+}

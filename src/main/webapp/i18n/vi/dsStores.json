@@ -1,0 +1,27 @@
+{
+  "jhipsterApp": {
+    "dsStores": {
+      "home": {
+        "title": "Ds Stores",
+        "createLabel": "Thêm mới một Ds Stores",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Ds Stores",
+        "notFound": "No Ds Stores found"
+      },
+      "created": "Một Ds Stores mới được tạo với định danh {{ param }}",
+      "updated": "Một Ds Stores cập nhật với định danh {{ param }}",
+      "deleted": "Một Ds Stores đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Ds Stores {{ id }}?"
+      },
+      "detail": {
+        "title": "Ds Stores"
+      },
+      "storeName": "Store Name",
+      "storeDescription": "Store Description",
+      "storeSize": "Store Size",
+      "growthSize": "Growth Size",
+      "storeDbmsType": "Store Dbms Type",
+      "storeCollation": "Store Collation"
+    }
+  }
+}

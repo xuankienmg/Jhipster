@@ -1,0 +1,28 @@
+{
+  "jhipsterApp": {
+    "eventLogs": {
+      "home": {
+        "title": "Event Logs",
+        "createLabel": "Thêm mới một Event Logs",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Event Logs",
+        "notFound": "No Event Logs found"
+      },
+      "created": "Một Event Logs mới được tạo với định danh {{ param }}",
+      "updated": "Một Event Logs cập nhật với định danh {{ param }}",
+      "deleted": "Một Event Logs đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Event Logs {{ id }}?"
+      },
+      "detail": {
+        "title": "Event Logs"
+      },
+      "rows": "Rows",
+      "eventNote": "Event Note",
+      "eventTimestamp": "Event Timestamp",
+      "eventType": "Event Type",
+      "eventCat": "Event Cat",
+      "flow": "Flow",
+      "tbl": "Tbl"
+    }
+  }
+}

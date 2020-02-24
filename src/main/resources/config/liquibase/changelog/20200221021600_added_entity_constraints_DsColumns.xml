@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity DsColumns.
+    -->
+    <changeSet id="20200221021600-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="col_tbl_id"
+                                 baseTableName="ds_columns"
+                                 constraintName="fk_ds_columns_col_tbl_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ds_tables"/>
+
+        <addForeignKeyConstraint baseColumnNames="ds_columns_id"
+                                 baseTableName="ds_columns_rule"
+                                 constraintName="fk_ds_columns_rule_ds_columns_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ds_columns"/>
+
+        <addForeignKeyConstraint baseColumnNames="rule_id"
+                                 baseTableName="ds_columns_rule"
+                                 constraintName="fk_ds_columns_rule_rule_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dq_rules"/>
+        
+    </changeSet>
+</databaseChangeLog>

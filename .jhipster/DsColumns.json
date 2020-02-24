@@ -1,0 +1,56 @@
+{
+    "name": "DsColumns",
+    "fields": [
+        {
+            "fieldName": "colName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "colDataType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isPrimaryKey",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "isForeignKey",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "isIdentity",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "isNull",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dsTables",
+            "otherEntityRelationshipName": "dsColumns",
+            "relationshipName": "colTbl",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "dqRules",
+            "otherEntityRelationshipName": "col",
+            "relationshipName": "rule",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200221021600",
+    "entityTableName": "ds_columns",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

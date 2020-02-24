@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "dsColumnTypes": {
+      "home": {
+        "title": "Ds Column Types",
+        "createLabel": "Thêm mới một Ds Column Types",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Ds Column Types",
+        "notFound": "No Ds Column Types found"
+      },
+      "created": "Một Ds Column Types mới được tạo với định danh {{ param }}",
+      "updated": "Một Ds Column Types cập nhật với định danh {{ param }}",
+      "deleted": "Một Ds Column Types đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Ds Column Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Ds Column Types"
+      },
+      "colTypeName": "Col Type Name",
+      "colTypeDescription": "Col Type Description"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+    "name": "DpSourceColumns",
+    "fields": [
+        {
+            "fieldName": "uniqueValues",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "minValue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "maxValue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "averageValue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dpSourceColumnscol",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "maxLength",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nulls",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dsTables",
+            "otherEntityRelationshipName": "dpSourceColumns",
+            "relationshipName": "tbl",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dsColumns",
+            "otherEntityRelationshipName": "dpSourceColumns",
+            "relationshipName": "col",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221022200",
+    "entityTableName": "dp_source_columns",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

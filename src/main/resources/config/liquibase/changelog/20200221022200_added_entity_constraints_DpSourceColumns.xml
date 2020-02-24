@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity DpSourceColumns.
+    -->
+    <changeSet id="20200221022200-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="tbl_id"
+                                 baseTableName="dp_source_columns"
+                                 constraintName="fk_dp_source_columns_tbl_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ds_tables"/>
+
+        <addForeignKeyConstraint baseColumnNames="col_id"
+                                 baseTableName="dp_source_columns"
+                                 constraintName="fk_dp_source_columns_col_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ds_columns"/>
+
+    </changeSet>
+</databaseChangeLog>

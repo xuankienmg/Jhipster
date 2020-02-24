@@ -1,0 +1,24 @@
+{
+  "jhipsterApp": {
+    "dqStandardDetailsEntityDatetime": {
+      "home": {
+        "title": "Dq Standard Details Entity Datetimes",
+        "createLabel": "Thêm mới một Dq Standard Details Entity Datetime",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Standard Details Entity Datetime",
+        "notFound": "No Dq Standard Details Entity Datetimes found"
+      },
+      "created": "Một Dq Standard Details Entity Datetime mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Standard Details Entity Datetime cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Standard Details Entity Datetime đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Standard Details Entity Datetime {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Standard Details Entity Datetime"
+      },
+      "stdAttributeName": "Std Attribute Name",
+      "stdAttributeValue": "Std Attribute Value",
+      "std": "Std"
+    }
+  }
+}

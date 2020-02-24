@@ -1,0 +1,57 @@
+{
+    "name": "EventLogs",
+    "fields": [
+        {
+            "fieldName": "rows",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "eventNote",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eventTimestamp",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "eventTypes",
+            "otherEntityRelationshipName": "eventLogs",
+            "relationshipName": "eventType",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "eventCategories",
+            "otherEntityRelationshipName": "eventLogs",
+            "relationshipName": "eventCat",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dataFlows",
+            "otherEntityRelationshipName": "eventLogs",
+            "relationshipName": "flow",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "dsTables",
+            "otherEntityRelationshipName": "eventLogs",
+            "relationshipName": "tbl",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221023200",
+    "entityTableName": "event_logs",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

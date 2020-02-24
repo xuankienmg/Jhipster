@@ -1,0 +1,22 @@
+{
+  "jhipsterApp": {
+    "eventCategories": {
+      "home": {
+        "title": "Event Categories",
+        "createLabel": "Thêm mới một Event Categories",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Event Categories",
+        "notFound": "No Event Categories found"
+      },
+      "created": "Một Event Categories mới được tạo với định danh {{ param }}",
+      "updated": "Một Event Categories cập nhật với định danh {{ param }}",
+      "deleted": "Một Event Categories đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Event Categories {{ id }}?"
+      },
+      "detail": {
+        "title": "Event Categories"
+      },
+      "eventCatName": "Event Cat Name"
+    }
+  }
+}

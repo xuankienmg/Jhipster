@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "dpSourceTables": {
+      "home": {
+        "title": "Dp Source Tables",
+        "createLabel": "Thêm mới một Dp Source Tables",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dp Source Tables",
+        "notFound": "No Dp Source Tables found"
+      },
+      "created": "Một Dp Source Tables mới được tạo với định danh {{ param }}",
+      "updated": "Một Dp Source Tables cập nhật với định danh {{ param }}",
+      "deleted": "Một Dp Source Tables đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dp Source Tables {{ id }}?"
+      },
+      "detail": {
+        "title": "Dp Source Tables"
+      },
+      "rows": "Rows",
+      "rowSize": "Row Size",
+      "columns": "Columns",
+      "hasTimestamp": "Has Timestamp",
+      "tbl": "Tbl"
+    }
+  }
+}

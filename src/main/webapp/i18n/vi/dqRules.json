@@ -1,0 +1,30 @@
+{
+  "jhipsterApp": {
+    "dqRules": {
+      "home": {
+        "title": "Dq Rules",
+        "createLabel": "Thêm mới một Dq Rules",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Dq Rules",
+        "notFound": "No Dq Rules found"
+      },
+      "created": "Một Dq Rules mới được tạo với định danh {{ param }}",
+      "updated": "Một Dq Rules cập nhật với định danh {{ param }}",
+      "deleted": "Một Dq Rules đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Dq Rules {{ id }}?"
+      },
+      "detail": {
+        "title": "Dq Rules"
+      },
+      "ruleName": "Rule Name",
+      "ruleDescription": "Rule Description",
+      "type": "Type",
+      "risk": "Risk",
+      "status": "Status",
+      "cat": "Cat",
+      "action": "Action",
+      "std": "Std",
+      "col": "Col"
+    }
+  }
+}
